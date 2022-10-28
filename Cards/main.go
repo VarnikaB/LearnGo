@@ -4,10 +4,13 @@ import "fmt"
 
 func main() {
 	//var card string = "Ace of Spades"
-	cards := newDeck()
+	/* cards := newDeck()
 
 	hand, remainingDeck := cards.deal(5)
 	hand.print()
 	fmt.Println()
-	remainingDeck.print()
+	remainingDeck.print() */
+
+	greeting := "Hello"
+	fmt.Println([]byte(greeting))
 }
