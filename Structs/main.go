@@ -24,7 +24,17 @@ func main() {
 			zipcode: 564091,
 		},
 	}
-	fmt.Println(alex)
-	fmt.Printf("%+v\n", alex) // prints the field names with values
+	alex.print()
 
+	alex.updateFirstName()
+	alex.print()
+
+}
+
+func (p person) print() {
+	fmt.Printf("%+v\n", p)
+}
+
+func (p person) updateFirstName() {
+	p.firstName = "Alexander"
 }
