@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	//var card string = "Ace of Spades"
+
 	cards := newDeck()
 
 	hand, remainingDeck := cards.deal(5)

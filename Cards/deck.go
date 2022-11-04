@@ -34,6 +34,7 @@ func (d deck) print() {
 
 func (cards deck) deal(handsize int) (deck, deck) {
 	return cards[:handsize], cards[handsize:]
+	//when receiver is used: cards.deal(5) => remove 5 cards as result and remaining left in cards which is not true in this case
 }
 
 func (cards deck) toString() string {
