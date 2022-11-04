@@ -26,7 +26,9 @@ func main() {
 	}
 	alex.print()
 
-	alex.updateFirstName()
+	alexPointer := &alex
+
+	alexPointer.updateFirstName()
 	alex.print()
 
 }
@@ -35,6 +37,6 @@ func (p person) print() {
 	fmt.Printf("%+v\n", p)
 }
 
-func (p person) updateFirstName() {
-	p.firstName = "Alexander"
+func (pointer *person) updateFirstName() {
+	pointer.firstName = "Alexander"
 }
