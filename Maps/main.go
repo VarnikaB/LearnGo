@@ -13,5 +13,7 @@ func main() {
 		"green": "0x0000FF",
 	}
 	colors["white"] = "0xFFFFFF"
+
+	delete(colors, "red")
 	fmt.Println(colors)
 }
