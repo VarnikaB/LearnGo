@@ -26,9 +26,7 @@ func main() {
 	}
 	alex.print()
 
-	alexPointer := &alex
-
-	alexPointer.updateFirstName()
+	alex.updateFirstName()
 	alex.print()
 
 }
@@ -38,5 +36,5 @@ func (p person) print() {
 }
 
 func (pointer *person) updateFirstName() {
-	pointer.firstName = "Alexander"
+	(*pointer).firstName = "Alexander"
 }
