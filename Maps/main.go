@@ -14,6 +14,11 @@ func main() {
 	}
 	colors["white"] = "0xFFFFFF"
 
-	delete(colors, "red")
+	//delete(colors, "red")
 	fmt.Println(colors)
+
+	fmt.Println("\nIterating over map:")
+	for color, hex := range colors {
+		fmt.Println(color + " has hexcode " + hex)
+	}
 }
